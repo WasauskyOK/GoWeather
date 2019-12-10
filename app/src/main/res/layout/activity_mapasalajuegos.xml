@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+
+        android:elevation="4dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radioGroupEstilo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Estilo Standar"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonStyle2"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Estilo Silver"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonStyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Estilo Retro"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+            <RadioButton
+                android:id="@+id/radioButtonStyle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Estilo Dark"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+            <RadioButton
+                android:id="@+id/radioButtonStyle5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Estilo Night"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+            <RadioButton
+                android:id="@+id/radioButtonStyle6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:text="Estilo Aubergine"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundwhite"
+
+        android:elevation="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="263dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/backgroundwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnReturnProfileSalaJuegos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnNinguno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#29ffc6"
+                            android:text="Ninguno"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/btnHibrido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#29ffc6"
+                            android:text="Hibrido"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/btnNormal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#29ffc6"
+                            android:text="Normal"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSatelital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#29ffc6"
+                            android:text="Satelital"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/btnTerreno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#29ffc6"
+                            android:text="Terreno"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+
+            android:id="@+id/btnReturnProfileSalaJuegos"
+            android:layout_width="90dp"
+            android:layout_height="99dp"
+
+
+            android:src="@drawable/close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapasalajuegos" />
+</FrameLayout>

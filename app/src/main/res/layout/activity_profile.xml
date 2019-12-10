@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundgradientprofile"
+    tools:context=".Profile"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textColor="#ffff"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center"
+
+        android:text="GoWeather !!!"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:text="( En tiempo real )"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="hora"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:id="@+id/tvhoraenvivo"></TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/btnJugarYTemas"
+                android:layout_width="289dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:background="@drawable/backgroundwhite"
+                android:text="Jugar y cambiar temas google maps"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btnIngresandoCoordenadas"
+                android:layout_width="289dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/backgroundwhite"
+                android:text="Ingresando coordenadas"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btnBusquedaenMapa"
+                android:layout_width="289dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/backgroundwhite"
+                android:text="consultando con el mapa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btnMiLocalizacion"
+                android:layout_width="289dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/backgroundwhite"
+                android:text="mi localizacion\n(No olvides activar tu gps)"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
